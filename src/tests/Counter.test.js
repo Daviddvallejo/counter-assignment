@@ -1,6 +1,7 @@
 // import necessary react testing library helpers here
 // import the Counter component here
 
+
 beforeEach(() => {
   // Render the Counter component here
 })
