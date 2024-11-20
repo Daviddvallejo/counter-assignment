@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import Counter from "../components/Counter";
 
 
+
 beforeEach(() => {
   render(<Counter />);
 })
