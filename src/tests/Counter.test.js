@@ -1,36 +1,22 @@
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import Counter from "../components/Counter";
-
+// import necessary react testing library helpers here
+// import the Counter component here
 
 beforeEach(() => {
-  render(<Counter />);
+  // Render the Counter component here
 })
 
 test('renders counter message', () => {
-  const message = screen.getByText(/counter/i);
-  expect(message).toBeInTheDocument();
+  // Complete the unit test below based on the objective in the line above
 });
 
 test('should render initial count with value of 0', () => {
-  const count = screen.getByTestId("count");
-  expect(count).toHaveTextContent("0");
+  // Complete the unit test below based on the objective in the line above
 });
 
 test('clicking + increments the count', () => {
-  const increment = screen.getByText("+");
-  const count = screen.getByTestId("count");
-  userEvent.click(increment);
-  expect(count).toHaveTextContent("1");
-  userEvent.click(increment);
-  expect(count).toHaveTextContent("2");
+  // Complete the unit test below based on the objective in the line above
 });
 
 test('clicking - decrements the count', () => {
-  const decrement = screen.getByText("-");
-  const count = screen.getByTestId("count");
-  userEvent.click(decrement);
-  expect(count).toHaveTextContent("-1");
-  userEvent.click(decrement);
-  expect(count).toHaveTextContent("-2");
+  // Complete the unit test below based on the objective in the line above
 });
